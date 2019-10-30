@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2019-10-29 13:14:04</p>
+                <p class='attribute'><strong>Duration: </strong>21.02 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 11, Pass: 9, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.HackerNewsAPIAutomation</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_1_top_stories</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AttributeError: 'list' object has no attribute 'status_code'</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/priyabrata/PycharmProjects/DemoApiAutomation/api_automation_demo.py", line 21, in test_1_top_stories
+    if _response.status_code == 200 and _response.json():
+AttributeError: 'list' object has no attribute 'status_code'
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_2_story_wise_data_01___21384158__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'by': 'panic', 'descendants': 44, 'id': 21384158, 'kids': [21384596, 21384337, 21384835, 21384443, 21384362, 21384830, 21384568, 21384579, 21384598, 21384761, 21384352, 21384858, 21384511, 21384533, 21384851], 'score': 217, 'time': 1572321441, 'title': 'Text Editing Hates You Too', 'type': 'story', 'url': 'https://lord.io/blog/2019/text-editing-hates-you-too/'} 200 1.28128
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_2_story_wise_data_02___21382470__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'by': 'Anon84', 'descendants': 22, 'id': 21382470, 'kids': [21383162, 21383372, 21383279, 21383959], 'score': 272, 'time': 1572301942, 'title': 'The Little Handbook of Statistical Practice (2012)', 'type': 'story', 'url': 'http://www.jerrydallal.com/LHSP/LHSP.htm'} 200 1.369398
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_2_story_wise_data_03___21384226__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'by': 'smaslennikov', 'descendants': 9, 'id': 21384226, 'kids': [21384903, 21384679, 21384386, 21384834], 'score': 62, 'time': 1572322895, 'title': 'View leaked secrets in Git live', 'type': 'story', 'url': 'https://shhgit.darkport.co.uk/'} 200 1.632838
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_2_story_wise_data_04___21378471__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'by': 'rubayeet', 'descendants': 463, 'id': 21378471, 'kids': [21378631, 21378791, 21379718, 21383187, 21383129, 21378780, 21379262, 21382854, 21382249, 21379106, 21381788, 21382216, 21384451, 21378634, 21378899, 21383402, 21379067, 21379390, 21382079, 21378770, 21379191, 21378627, 21382353, 21382163, 21379303, 21379256, 21379378, 21378879, 21382554, 21380098, 21381200, 21379075, 21378768, 21381483, 21379060, 21382824, 21384063, 21382322, 21379511, 21380732, 21380354, 21379317, 21379553, 21384480, 21381435, 21382481, 21380717, 21383067, 21380153, 21384283, 21382259, 21379094, 21381124, 21380653, 21379851, 21382644, 21381320, 21381294, 21381220, 21379564, 21381324, 21381734, 21380947, 21379030, 21379008, 21380850, 21379739, 21378786], 'score': 482, 'time': 1572280386, 'title': 'Alphabet in bid to buy Fitbit', 'type': 'story', 'url': 'https://www.reuters.com/article/us-fitbit-m-a-alphabet-exclusive/exclusive-google-owner-alphabet-in-bid-to-buy-fitbit-sources-idUSKBN1X71NY'} 200 1.426693
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_2_story_wise_data_05___21383439__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'by': 'otherdave', 'descendants': 21, 'id': 21383439, 'kids': [21384221, 21383865, 21384691, 21383851, 21384157, 21383743, 21383911, 21384210, 21383732, 21383860], 'score': 106, 'time': 1572311629, 'title': 'A GUI framework for C# console applications', 'type': 'story', 'url': 'https://github.com/TomaszRewak/C-sharp-console-gui-framework'} 200 6.552105
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_2_story_wise_data_06___21383138__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'by': 'frutiger', 'descendants': 82, 'id': 21383138, 'kids': [21383479, 21383766, 21383567, 21383676, 21384323, 21383395, 21383410, 21384108, 21384153], 'score': 118, 'time': 1572308054, 'title': 'Intel: 10nm Product Era Has Begun, 7nm on Track', 'type': 'story', 'url': 'https://www.anandtech.com/show/15032/intel-2019-fab-update-10nm-hvm-7nm-on-track'} 200 1.429239
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_2_story_wise_data_07___21383692__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'by': 'pmoriarty', 'descendants': 14, 'id': 21383692, 'kids': [21384878, 21384464, 21384588, 21384543], 'score': 26, 'time': 1572314917, 'title': 'Moving Beyond Types', 'type': 'story', 'url': 'https://hypothesis.works/articles/types-and-properties/'} 200 1.632257
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_2_story_wise_data_08___21384119__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'by': 'archimag0', 'descendants': 10, 'id': 21384119, 'kids': [21384876, 21384336, 21384322], 'score': 40, 'time': 1572320862, 'title': 'KTRW: The Journey to Build a Debuggable iPhone', 'type': 'story', 'url': 'https://googleprojectzero.blogspot.com/2019/10/ktrw-journey-to-build-debuggable-iphone.html'} 200 1.277256
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_2_story_wise_data_09___21380077__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>{'by': 'ProfDreamer', 'descendants': 58, 'id': 21380077, 'kids': [21380212, 21383689, 21383151, 21381264, 21383433, 21382207, 21383297], 'score': 281, 'time': 1572287836, 'title': 'Adopting Erlang', 'type': 'story', 'url': 'https://adoptingerlang.org/'} 200 1.234365
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_2_story_wise_data_10___21384191__</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: Fields Not Present!!!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/priyabrata/.local/lib/python3.6/site-packages/ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/priyabrata/PycharmProjects/DemoApiAutomation/api_automation_demo.py", line 48, in test_2_story_wise_data
+    raise Exception('Fields Not Present!!!')
+Exception: Fields Not Present!!!
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 11, Pass: 9, Error: 2 -- Duration: 21.02 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
