@@ -5,7 +5,6 @@ import HtmlTestRunner
 import os
 import csv
 from ddt import ddt, data, unpack
-from threading import Timer
 from csv_reader import get_csv_data
 from api_call_manager import API_Call_Manager
 csv_path = os.getcwd()+'/story_id.csv'
