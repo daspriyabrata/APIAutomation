@@ -1,5 +1,4 @@
 import csv
-import os
 
 
 def get_csv_data(csv_path):
@@ -7,7 +6,7 @@ def get_csv_data(csv_path):
     data_set = csv.reader(variable_file)
     for row in data_set:
         column = list(i for i in row)
-    columns = [column[i:i+1] for i in range(10)]
+    columns = [column[i:i+1] for i in range(12)]
     return columns
 
 # print(get_csv_data(os.getcwd()+'/story_id.csv'))
