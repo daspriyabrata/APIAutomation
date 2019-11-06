@@ -1,14 +1,15 @@
-import requests
 import json
-import unittest
-import HtmlTestRunner
 import os
-import csv
+import unittest
+
+import HtmlTestRunner
 from ddt import ddt, data, unpack
-from threading import Timer
-from csv_reader import get_csv_data
+
 from api_call_manager import API_Call_Manager
-csv_path = os.getcwd()+'/story_id.csv'
+from csv_reader import get_csv_data
+
+csv_path = os.getcwd() + '/story_id.csv'
+
 
 @ddt
 class HackerNewsAPIAutomation(unittest.TestCase):
@@ -32,20 +33,16 @@ class HackerNewsAPIAutomation(unittest.TestCase):
         _response_body = _response.json()
         _response_status = _response.status_code
         _response_time = _response.elapsed.total_seconds()
-        field_1 = _response_body['by']
-        field_2 = _response_body['descendants']
-        field_3 = _response_body['id']
-        field_4 =  _response_body['kids']
-        field_5 = _response_body['score']
-        field_6 = _response_body['time']
-        field_7 = _response_body['title']
-        field_8 = _response_body['type']
-        field_9 = _response_body['url']
-        if field_1 and field_2 and field_3 and field_4 and field_5 and field_6 and field_6 and field_7 and field_8 and field_9 :
-            print(_response_body, _response_status, _response_time)
-            assert 1==1
-        else:
-            raise Exception('Fields Not Present!!!')
+
+        with open('sampleresponse.json', 'rt') as f:
+            sj = json.load(f)
+            keys = list(sj.keys())
+        for key in keys:
+            if key in list(_response_body.keys()):
+                pass
+            else:
+                raise Exception(key + " key is not present.")
+
 
 if __name__ == '__main__':
     unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output=os.getcwd()))

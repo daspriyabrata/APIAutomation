@@ -1,3 +1,5 @@
+HtmlTestRunner
+requests
 html-testRunner==1.2
 selenium==3.141.0
 ddt==1.2.1

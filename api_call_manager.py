@@ -17,7 +17,7 @@ class API_Call_Manager:
             raise Exception('Read Timeout')
         _response_json = _response.json()
         _top_ten_stories = []
-        for i in range(10):
+        for i in range(12):
             # print(_response_json[i])
             _top_ten_stories.append(str(_response_json[i]))
 
